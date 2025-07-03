@@ -1,1 +1,1 @@
-# JavaScript-practice-basics-to-advanced.
+# JavaScript-practice-basics-to-advanced
