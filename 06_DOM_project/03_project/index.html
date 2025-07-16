@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess a Number </title>
+
+    <style>
+         body{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        .header{
+            display: flex;
+            background-color: rgb(30, 39, 39);
+            padding: 3px;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            border: 1px solid #4604ec;
+            width: 100vw;
+        }
+         .header  button{
+            background-color: rgb(49, 35, 35);
+            color: rgb(255, 255, 255);
+        }
+         .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 130px;
+            border: 1px solid blue;
+            height: 100vh;
+            color: aliceblue;
+            background-color: rgb(79, 68, 68);
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <button> Home </button>
+    </div>
+
+    <div class="container">
+        <div class="up">
+            <h3 style="margin-left: 35%;"> Number Guessing Game </h3>
+            <p> Try and guess a number btween 1 and 100. You have 10 attemts to guess the number </p>
+        </div>
+
+        <div class="mid">
+            <h1> Guess a Number </h1>
+            <input type="number" id="ipnum" placeholder="put a number"> 
+            <button id="midsub"> submit </button>
+
+        </div>
+
+        <div class="down">
+            <div class="pre">
+                Previous Guesses:-  <button id="Resultarr"> </button>
+            </div>
+            <div class="remain">
+                Guess Remaining:- <button id="attemts"> 10 </button>
+            </div>
+            <h2 class="result"> </h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
