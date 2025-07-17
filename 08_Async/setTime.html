@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="kd">
+        my name is kundan <button class="stop"> stop </button>
+    </div>
+    <script>
+        let l = document.querySelector('.kd');
+        let st  = document.querySelector('.stop');
+    
+        function print(){
+            l.innerHTML = "my name is changed";
+        }
+        let p = setTimeout( print, 3000);
+        st.addEventListener('click' , function(){
+            clearTimeout(p);
+        } , false);  
+               
+    </script>
+</body>
+</html>
